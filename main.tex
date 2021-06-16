@@ -1,0 +1,225 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{csquotes}
+\usepackage[english,brazilian]{babel}
+\usepackage{graphicx}
+\usepackage[citestyle=authoryear,articlein=false,style=ext-authoryear-comp,backend=biber,natbib=true]{biblatex}
+\addbibresource{biblio.bib}
+\usepackage{outlines}
+\usepackage{hyperref}
+
+\newcommand{\listalivro}[1]{\citetitle{#1}, de \citet{#1}.}
+\addtolength{\parskip}{0.4em}
+
+\title{Guia da Realização do Doutorado}
+\author{Geraldo Xexéo}
+\date{April 2021}
+
+
+
+
+\begin{document}
+%\fontfamily{cmss}\selectfont
+
+\makeatletter
+\begin{titlepage}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{imagens/logo-line-modificado.PNG}
+\par
+\includegraphics[width=0.8\textwidth]{imagens/LUDES_PP-03.png}
+\par
+\vspace{3cm}  
+\Huge{\textbf{\@title}}
+\\[1cm]
+\LARGE
+\@author
+\\[.3cm]
+\normalsize
+\today
+\end{center}
+\end{titlepage}
+\thispagestyle{empty}
+\makeatother
+
+
+\maketitle
+
+\frontmatter
+\tableofcontents
+
+  \mainmatter
+
+\chapter{Introdução}
+
+Ao contrário do Guia dos Orientados\footnote{\url{http://www.xexeo.net/ensino/guia-dos-orientados/}}, que eu distribuo livremente e é bem geral, este guia é apenas para os meus orientados, ou pelo menos aos interessados em minha orientação. Ele é específico da COPPE/UFRJ, do Programa de Engenharia de Sistemas e Computação, e apresenta regras que só valem sob a minha orientação. 
+
+%Se você é meu orientado, esse guia é praticamente um contrato entre nós dois.
+
+Os cursos da COPPE possuem uma regulamentação que pode ser obtida na Web\footnote{\url{https://coppe.ufrj.br/sites/default/files/arquivo_cpgp/Alunos_a_partir_2017.1.pdf}}. Recomenda-se fortemente aos alunos ler a regulamentação.
+
+O aluno é classificado como \textit{inscrito ao doutorado} ou, após fazer o Exame de Qualificação ao Doutorado, como \textit{candidato ao doutorado}
+
+\section{Prazos Oficiais}
+
+Para poder defender a dissertação, o aluno deve passar de aluno a candidato, por meio de um Exame de Qualificação de Doutorado, que tem o prazo de 3 anos desde a entrada do aluno, com possibilidade de extensão em até 6 meses. 
+
+No Programa de Engenharia de Sistemas e Computação (PESC) o exame é feito com uma banca aprovada por órgão colegiado,.
+
+O aluno da COPPE tem 5 anos para terminar a tese de doutorado, com direito a pedir até um ano de extensão, normalmente feito em um, ou dois, pedidos de 6 meses\footnote{\url{https://coppe.ufrj.br/sites/default/files/arquivo_cpgp/Resolucao_01.2018.pdf}} ao Colegiado do Programa.
+
+As bolsas CAPES e CNPq duram 4 anos, que no PESC são contados a partir da data de entrada dos alunos, e não da data de recebimento da bolsa.
+
+A bolsa da FAPERJ para os melhores alunos, que são adicionais a bolsa da CAPES ou CNPq, tem a duração de 2 ano, que é são o terceiro e quarto anos do aluno no PESC.
+
+A COPPE pode fornecer extensões por motivo de saúde e gravidez.
+
+\section{A realidade dos prazos}
+
+Na COPPE temos 4 períodos, e o quarto período não é muito produtivo, pois se passa no final de ano, nas férias dos professores, e muitas vezes no Carnaval.
+
+O ideal é que o aluno acabe sua tese em até quatro anos. Para isso deve defender o seu Exame de Qualificação de Doutorado antes desse prazo, de preferência em torno de 18 a 24 meses após entrar no doutorado.
+
+%Para isso é importante que o aluno:
+%\begin{itemize}
+%    \item Tenha um orientador desde cedo, de preferência após o segundo período e, para os que entram em março, antes do fim do ano.
+%    \item Escolha o tema entre o terceiro e quarto período, aproveitando o quarto período para pesquisar sobre os possíveis temas.
+%    \item Tenha  tema e orientador escolhidos antes do início seu quinto período no mestrado, em geral antes de março.
+%\end{itemize}
+
+
+
+\section{As notas da COPPE}
+
+A cada período o aluno recebe uma nota entre A, B, C e D, onde A vale 3,0 e é excelente trabalho, B vale 2,0 e é bom trabalho, C vale 1,0 e é insuficiente para defender a tese e D vale 0,0 (zero) e é uma reprovação.
+
+Para defender a tese o aluno só pode ter uma nota D, que deve ser compensada pela mesma cadeira, ou outra cadeira com permissão do orientador, além da média B.
+
+
+
+\chapter{Como é uma defesa de tese}
+
+Uma defesa de dissertação é um apresentação formal da mesma, pelo candidato, a uma banca de doutores.
+
+Esses doutores são propostos pelo orientador, normalmente em acordo com o orientado, a um órgão colegiado. O orientador escolhe os membros da banca de acordo com o tema, a experiência e reconhecimento dos professores convidados, e questões de logística, como disponibilidade nas datas previstas, disponibilidade de verba no PESC, etc.
+
+Mesmo antes da pandemia da Covid, alguns membros da banca já podiam estar a distância, participando por um mecanismo de comunicação qualquer. Durante a pandemia, todos podem estar a distância.
+
+A banca deve cumprir requisitos, atualmente segundo o regulamento que pode ser obtido  \href{https://coppe.ufrj.br/pt-br/node/3464}{no site da COPPE}\footnote{\url{https://coppe.ufrj.br/sites/default/files/arquivo_cpgp/diretrizesbancas.pdf}}. Esses requisitos fazem exigências quanto a experiência comprovada e avaliação do professor segundo as mesmas regras da Coppe.
+
+O candidato ao mestrado deve entregar a sua dissertação à banca entre 15 a 21 dias antes, porém esse prazo pode ser menor ou maior de acordo com às circunstâncias. 
+
+\section{O resultado da defesa}
+
+A COPPE admite três resultados para a defesa:
+\begin{enumerate}
+\item aprovação incondicional pela unanimidade dos integrantes da Banca Examinadora;
+\item aprovação condicionada ao cumprimento de exigências; ou
+\item reprovação.
+\end{enumerate}
+
+Na aprovação incondicional, o candidato ainda tem 30 dias de prazo para festejar, fazer pequenas modificações sugeridas pela banca, imprimir e encadernar uma cópia da dissertação, e fazer todo os processos determinados pelo Registro da COPPE e pelo PESC.
+
+Na aprovação condicionada, que não é incomum, a banca faz exigências ao candidato. Eu posso dizer não só que é sempre merecido como normalmente essas exigência ocorrem porque o candidato ou não escutou o orientador, ou defendeu no fim do prazo, então ficou com um trabalho com defeitos que, se consertados, pode ser aprovado. A questão é que o prazo máximo é de 90 dias, logo se a banca não considerar viável corrigir os defeitos em 90 dias, o candidato será reprovado. Além disso, a banca sempre pede uma análise do orientador sobre a perspectiva que ele tem do candidato realizar os pedidos.
+
+Se o candidato for reprovado o resultado é final e sem apelo. Entre as dezenas de banca que participei, poucas foram as reprovações. Entre os casos que me lembro posso citar pelo menos 1 caso de plágio intencional e pelo menos 3 casos que foi recomendado ao aluno, que já tinha esgotado todos os prazos, que não defendesse a dissertação (ou tese). 
+
+Aviso que já reprovei alunos meus e de outros professores, e muitas vezes exigi mudanças grandes no trabalho. A função da banca é também garantir o nome da instituição e o valor do diploma sendo atribuído.
+
+A COPPE possui um roteiro do que fazer após a aprovação\footnote{\url{https://www.coppe.ufrj.br/sites/default/files/arquivo_cpgp/roteiro_pos.pdf}}.
+
+
+
+\chapter{As fases da tese}
+
+Espero que meus orientados façam a tese em algumas fases:
+\begin{outline}
+    \1 \textbf{Descoberta do Tema}, uma fase exploratório, onde se procura de maneira informal, na literatura e na sociedade, um tema de pesquisa que interesse ao aluno e a mim. 
+    \2 Geralmente isso é feito no \textbf{quarto período do primeiro ano}, entre dezembro e fevereiro, para a grande maioria dos alunos de mestrado. 
+    \1 \textbf{Pesquisa do Estado da Arte do Tema}, ou a famosa revisão bibliográfica, porém com foco. 
+    \2 Esse trabalho deve demorar até 6 meses para obter um resultado, porém ele continua ao longo da dissertação, de forma que o aluno se mantenha atualizado até o fim,
+    \2 Nessa fase, de forma detalhada, o aluno levanta o problema e as soluções disponíveis, possivelmente fazendo uso de uma \textbf{técnica formal de revisão da literatura}, como Revisão Sistemática, Revisão Rápida, Revisão Quasi-Sistemática e outras. 
+    \2 Como resultado da fase \textbf{deve ser determinado um problema específico a ser resolvido} pelo aluno. 
+    \2 Outro resultado da fase é um \textbf{capítulo de revisão bibliográfica} e um início da introdução.
+    \2 Também se espera que o aluno encontre dados para seu problema, encontre o software usado nos artigos que leu e prepare um repositório com isso. 
+    \2 Alguns alunos também fazem código e protótipos.
+    \1 \textbf{Investigação do Tema}, onde o aluno busca, possivelmente em ciclos investigativos, resolver o seu problema. 
+    \2 Essa fase deve durar de 12 a 249 meses.
+    \2 Sendo o trabalho investigativo, o melhor é pensar de forma ágil, usando conceitos como Produto Viável Mínimo e Sprints.
+    \2 Ao concluir essa fase o aluno deve ter o corpo da tese em estágio avançado.
+    \1 \textbf{Conclusão da Dissertação}, onde o aluno conclui o texto da tese, finaliza a análise de resultados e avalia seu trabalho.
+    \2 Essa fase deve demorar aproximadamente 3 meses.
+    \1 Defesa da tese
+    \1 Atividades pós-defesa
+\end{outline}
+
+
+
+
+\chapter{O Exame de Qualificação de Doutorado}
+
+
+
+\chapter{Práticas Acadêmicas}
+
+\section{Publicações}
+
+É praxe na Computação e no PESC que os orientados, ao escrever um artigo dentro do contexto do Programa, convidem o orientador para participar como autor. 
+
+Eu devo participar das publicações relativas a sua dissertação. Essa prática difere de outras áreas, mas tendo em vista a carga de trabalho e participação de um orientado na Computação, é considerada de praxe. 
+
+Já \textbf{se você vai publicar} com outro professor, ou se vai publicar sozinho ou com alunos, deve me avisar e possivelmente \textbf{me convidar para participar} antes de apresentar a publicação ao congresso ou revista. Eu decidirei com você se devo ou não participar. 
+
+É comum que eu decida não participar se o artigo não tiver relação com meu trabalho, ou com nossas discussões durante a relação aluno-orientador. 
+
+Deixando claro, alguns alunos já publicaram artigos usando tudo que trabalhamos juntos e aplicando a outra área e não me chamaram para co-autor, com o agravante que os orientadores de outros participantes entraram. Uma aluna chegou a me apresentar uma artigo, sem meu nome, com o nome do outro orientador apenas, onde grande parte do trabalho teórico era meu. Isso é inadmissível. 
+
+Não vou participar, é claro, de trabalhos realizados anteriormente a orientação e que não tenham se aproveitado da mesma.
+
+Pode acontecer, porém, de eu querer colaborar com o artigo, e aí decidiremos se essa colaboração é necessária ou não. Já aconteceu de alunos cuidadosos me convidarem, gentilmente, para participar de trabalhos que foram realizados no seu Trabalho de Conclusão de Curso, por estarem sob minha orientação, e eu, também gentilmente, recusei.
+
+Eventualmente eu já retirei meu nome de artigos que considerava não merecer ser publicados, tanto por causa do artigo, quanto por causa do veículo, como no caso de editoras predatórias.
+
+Isso significa também que \textbf{você não deve colocar meu nome como autor sem minha autorização}.
+
+Após completar o seu mestrado, é também praxe que qualquer publicação sobre ela tenha minha participação. 
+Temas derivados, porém, que não foram discutidos por nós, não se encaixam nesse perfil. 
+
+Basicamente,a regra é dar crédito a quem merece o crédito, e isso pode incluir outras pessoas. 
+
+Eu prefiro ter mais autores em um artigo do que devia do que ter menos.
+
+\chapter{A Revisão Bibliográfica}
+
+O aluno deve fazer uma ou mais revisões bibliográficas, que comporão o corpo da tese. 
+
+Para isso podem ser usadas metodologias como Revisão Sistemática, Mapeamento Sistemático, Revisão Rápida ou outra. Uma revisão \textit{ad-hoc} bem feita e descrita de forma a poder ser reproduzida pode ser aceita.
+
+O aluno deve obrigatoriamente revisar o histórico do problema e o estado da arte da solução. Dependendo da independência dos dois tópicos, em relação a perspectiva do aluno, isso pode ser resumido em um ou dois capítulos.
+
+\section{Perguntas que a RB pode responder}
+\begin{enumerate}
+    \item Qual o problema?
+    \item Que subproblemas existem?
+    \item Que dados existem disponíveis?
+    \item Que soluções existem? 
+    \item Qual o melhor resultado?
+\end{enumerate}
+
+\chapter{Leitura Obrigatória}
+
+Os alunos devem obrigatoriamente ler os seguintes textos antes de começar a tese:
+\begin{outline}
+\1 \listalivro{Dresch:2015}
+\1 Se você é da área de jogos
+\2 \listalivro{Xexeo:2017}
+\end{outline}
+
+\backmatter
+\printbibliography
+
+
+\end{document}
+
+
+
